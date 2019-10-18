@@ -1,14 +1,38 @@
 //@ts-check
-//create an array of words
-var words =
-    ["Spain","Mexico","France","Albania","Azerbaijan","Bahamas",
-    "Botswana","Brunei","Chile","Denmark","Ecuador","Gambia","Grenada",
-    "Hungary","Ireland","Malta","Lebanon"];
+//create an array of letters
+let emptArr = [];
+const guessList = 10;
+let letterChoice =
+    ["a","b","c","d","d","f",
+    "g","h","i","j","k","l","m",
+    "n","o","p","q","r","s","t","u","v","w","x","y","z"];
+let wins = 0;
+let losses = 0;
+let letterGuess = '';
 
-//pick a random country from the array of words
-var word = words[Math.floor(Math.random() * words.length)];
 
-//set up answerArray to show how many letters ther are using _'s
+//pick a random letter from the array of letters
+var letters = letters[Math.floor(Math.random() * letters.length)];
+//console.log(random letter)
+return letters;
+
+//checks guess with random letter
+function letterMatch(guess, losses) {
+    let matchPosition = [];
+    for (let i=0; i < letterGuess.length; i++){
+        if (guess ==== letterGuess.charAt(i)) {
+            matchPosition.push(i);
+            console.log(matchPosition);
+        }
+        else if (!matchPosition.length && i === letterGuess.length-1) {
+            losses.push(guess);
+            console.log(losses)
+        }
+    }
+}
+
+
+//set up answerArray to show how many letters they are using _'s
 
 var answerArray =[];
 for (var i = 0; i < word.length; i++) {
