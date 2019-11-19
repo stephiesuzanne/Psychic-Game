@@ -4,8 +4,5 @@ https://stephiesuzanne.github.io/Psychic-Game/
 
 Technologies Used:
 
-HTML
-CSS
-Bootstrap CSS 
-JavaScript
+HTML,CSS,Bootstrap CSS, and JavaScript
 
